@@ -8,4 +8,32 @@
 # odds_and_evens("abcdefg",false)   # => "aceg"
 
 def odds_and_evens(string, return_odds)
+
+newy = ""
+
+listing = Hash.new
+
+var = string.split(//)
+
+
+if return_odds.eql? true
+  
+  var.each_with_index {|x, y| listing[x] = y}
+
+  listing.each {|x,y| newy << x if y % 2 == 1}
+
+  return newy
+
+elsif return_odds.eql? false
+
+  var.each_with_index {|x, y| listing[x] = y}
+
+  listing.each {|x,y| newy << x if y % 2 == 0}
+
+  return newy
+else
+
+end
+
+
 end
