@@ -14,3 +14,20 @@
 # prime_chars? ['ab', 'cd']       # => false
 # prime_chars? ['a', 'bcd']       # => false
 # prime_chars? ['a', 'b', 'cd']   # => false
+
+def prime_chars?(num)
+    
+    require 'prime'
+    
+    var = num.join('').length 
+    if var <= 1
+        return nil
+    elsif
+          var.prime? == false
+	return nil
+    else
+	var.prime? == true
+	return true
+    end
+    
+end
